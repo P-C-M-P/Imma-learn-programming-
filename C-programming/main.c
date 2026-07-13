@@ -22,6 +22,9 @@ int main(){
 
     printf("%s", name);
 
+
+    
+    printf("%f", y = 5*x+y+y);     //funky addition and printing simultaneously*  *not really simulataneous
     return 0;
 
 }
