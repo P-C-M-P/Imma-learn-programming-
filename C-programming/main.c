@@ -3,13 +3,15 @@
 
 int main(){
     // data types and format specifiers
+    // width specified by adding desired width between percentage sign and letter if format specifier
+
     int x=4;
     float y=4.56734;
     double e=2.718;
     char z= '!';
     char name[] = "NOT BROTATO";
 
-    printf("%d", x);
+    printf("%3d", x);
 
     printf("%f", y);
 
