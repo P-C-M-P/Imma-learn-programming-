@@ -17,7 +17,7 @@ int main(){
     printf("PI is equal to: %f", pi);
 
     printf("Enter your symbol: ");
-    scanf("%c", &symbol);
+    scanf(" %c", &symbol);
     
     printf("You're favorite symbol is: %c", symbol);
 
@@ -25,6 +25,13 @@ int main(){
     fgets(name, sizeof(name), stdin);
     
     printf("You're name is: %s", name);
+
+    /*
+    when scanning for a character make sure to leave some space between the openinig quotation and the % sign
+    do the thing mentioned above when scanning for a character after scanning for anything else as shown above in line 20.
+    */
+
+
 
 
     /*
