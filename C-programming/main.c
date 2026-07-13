@@ -28,9 +28,6 @@ int main(){
     return 0;
 
 
-    /*
-    when scanning for a character make sure to leave some space between the openinig quotation and the % sign
-    do the thing mentioned above when scanning for a character after scanning for anything else 
-    */
+  
 
 }
