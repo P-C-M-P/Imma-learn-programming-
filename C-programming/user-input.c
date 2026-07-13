@@ -9,23 +9,23 @@ int main(){
     printf("Enter your age: ");
     scanf("%d", &age);
     
-    printf("You are %d years old!", age);
+    printf("You are %d years old!\n", age);
 
     printf("Enter pi: ");
     scanf("%f", &pi);
     
-    printf("PI is equal to: %f", pi);
+    printf("PI is equal to: %f\n", pi);
 
     printf("Enter your symbol: ");
     scanf(" %c", &symbol);
 
-    printf("You're favorite symbol is: %c", symbol);
+    printf("You're favorite symbol is: %c\n", symbol);
     
     getchar();
     printf("Enter your name: ");
     fgets(name, sizeof(name), stdin);
     
-    printf("You're name is: %s", name);
+    printf("You're name is: %s\n", name);
 
     /*
     when scanning for a character make sure to leave some space between the openinig quotation and the % sign
@@ -44,7 +44,7 @@ int main(){
     */
 
 
-    
+
     /*
     when using the fgets function after a scanf function which ignores the \n character of input, reads the \n character before we get to scan the string input using the fgets function. 
     This can be solved using the getchar function as is shown above.
