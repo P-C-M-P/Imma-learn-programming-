@@ -25,7 +25,7 @@ int main(){
     getchar();
     printf("Enter your name: ");
     fgets(name, sizeof(name), stdin);
-    name[strlen(name) - 1] = '\0'  // this line removes the newline character that the fgets function reads from the user input, it depends on the string.h header file since the strlen function is a built in function for that header file
+    name[strlen(name) - 1] = '\0';  // this line removes the newline character that the fgets function reads from the user input, it depends on the string.h header file since the strlen function is a built in function for that header file
     
     printf("You're name is: %s\n", name);
 
