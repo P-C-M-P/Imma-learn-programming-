@@ -1,1 +1,1 @@
-Eh, today is my first day using Git. Turns out it ain't all that kind boggling, although it is pretty cool.
+Eh, today is my first day using Git. Turns out it ain't all that mind boggling, although it is pretty cool.
