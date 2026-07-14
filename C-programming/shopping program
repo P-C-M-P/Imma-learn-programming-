@@ -14,12 +14,12 @@ int main(){
     scanf("%f", &price);
 
     printf("How many do you want to buy? ");
-    scanf("%f", &quantity);
+    scanf("%d", &quantity);
 
     total = quantity * price;
 
     printf("You wanted to buy %d item/s of %s", quantity, object);    // prints out the desired output 
-    printf("Your total is equal to; %f", total);
+    printf("Your total is equal to: %f", total);
 
     return 0;
 
