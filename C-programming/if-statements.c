@@ -8,7 +8,7 @@ int main(){
     printf("How old are you? ");
     scanf("%d", &age);
 
-    if(age >= 18){
+    if(age >= 18){   // determines eligibilty to drink based on user age
 
         printf("You are of age!\n");
         printf("You're allowed to drink alcohol.\n");
@@ -24,7 +24,7 @@ int main(){
     printf("What day of the week is it(1-7)? ");
     scanf("%d", &DOW);
 
-    switch(DOW){
+    switch(DOW){  //determines day of the week based on user input
 
         case 1:
             printf("it is monday");
