@@ -18,7 +18,7 @@ int main(){
 
     total = quantity * price;
 
-    printf("You wanted to buy %f item/s of %s", quantity, object);    // prints out the desired output 
+    printf("You wanted to buy %d item/s of %s", quantity, object);    // prints out the desired output 
     printf("Your total is equal to; %f", total);
 
     return 0;
