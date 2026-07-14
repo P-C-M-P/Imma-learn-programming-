@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main(){
+
+    char object[50] = "";      // LINES 5-8 declares our variables and then assigns them initial values
+    int quantity = 0;
+    float price = 0.0f;
+    float total = 0.0f;
+
+    printf("What do you want to buy? ");     // LINES 10-17 ask the user for their input, scnas and stores them into our variables  
+    fgets(object, sizeof(object), stdin);
+
+    printf("What's the price of the object? ");
+    scanf("%f", &price);
+
+    printf("How many do you want to buy? ");
+    scanf("%f", &quantity);
+
+    total = quantity * price;
+
+    printf("You wanted to buy %f item/s of %s", quantity, object);    // prints out the desired output 
+    printf("Your total is equal to; %f", total);
+
+    return 0;
+
+
+}
