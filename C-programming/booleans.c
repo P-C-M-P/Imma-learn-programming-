@@ -12,7 +12,7 @@ int main(){
     if(health>=5){  // 
         printf("you can inflict damage\n");  
         printf("would you like to attack?(1(for yes) OR 0(for no)) ");
-        scanf("%d", &attack);
+        scanf("%d", &attack); //store bool as 1(true) or 0(false)
         
         if(attack){
             printf("you have inflicted a damage of 3\n");
