@@ -25,8 +25,13 @@ int main(){
             printf("the result is: %.4lf", c);
             break;
         case '/':
-            c = a / b;
-            printf("the result is: %.4lf", c);
+            if(b == 0){  // division by zero is impossible
+                printf("you can't do division by 0!");
+            }
+            else{
+                c = a / b;
+                printf("the result is: %.4lf", c);
+            }
             break;
         case '*':
             c = a * b;
