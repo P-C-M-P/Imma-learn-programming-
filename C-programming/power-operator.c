@@ -2,20 +2,22 @@
 
 int power(double num, int pow){
 
-    int res = 1, num;
+    int res = 1;
 
-    for(; pow>=2; pow--){
+    for(; pow>=1; pow--){
         res = res * num;
-        pow = pow -1;
     }
-    return res;
+    printf("%d", res);
 
 }
 
 int main(){
 
-    double x = 4.0;
-    int y = 3;
+    double x;
+    int y;
+    
+    printf("Enter two number(the first will be raised to the second number, also add a comma between the numbers without a space tho, as in(a,b)): ");
+    scanf("%lf,%d", &x,&y);
 
     power(x, y);
 
