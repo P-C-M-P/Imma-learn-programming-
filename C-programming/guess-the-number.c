@@ -7,6 +7,7 @@ int main(){
     srand(time(NULL));
     
     int guess;
+    int tries=1;
     int max = 100, min = 1, random;
     random = (rand() % (max - min + 1)) + min;
     
@@ -24,7 +25,9 @@ int main(){
             printf("Enter a different guess: ");
             scanf("%d", &guess);
         }
+        tries++;
     }
-    printf("That's exactly it!");
+    printf("That's exactly it!\n");
+    printf("It took you %d tries", tries);
 
 }
