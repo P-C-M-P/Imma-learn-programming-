@@ -21,7 +21,6 @@ int main(){
         printf("\n");
         printf("\r%02d:%02d:%02d", pTime->tm_hour, pTime->tm_min, pTime->tm_sec);
         
-        printf("%ld\n", rawtime);
         
         sleep(1);
     }
