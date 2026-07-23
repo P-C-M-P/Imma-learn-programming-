@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 //so this code could be more succinct but i stuck with this cause why not, as for how, 
-//you can just replace the (n/2) in line 14 to just sqrt(n)
+//you can just replace the (n/2) in line 14 to just sqrt(n) as shown in the comment in line 15(which does require the header file math.h)
 
 int main()
 {
@@ -12,6 +12,7 @@ int main()
     
     int c = 0;
     for(int i = 2; i <= (n/2); i++){
+    // for(int i = 0; i <= sqrt(n); i++){.....}
         
         if((n%i) == 0){
             c++;
