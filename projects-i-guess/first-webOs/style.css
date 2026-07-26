@@ -1,0 +1,25 @@
+.closebutton{
+
+  width: 48px;
+  height: 24px;
+  cursor: pointer;
+  background-color: #EC6B5E;
+  border-radius: 16px;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  margin-left: 6px
+}
+
+.welcome{
+    border: 4px solid #aaaaaa; 
+    border-radius: 12px; 
+    background-color: #bbbbbb;
+    color: #00000a; 
+    position: absolute
+}
+
+.welcomeheader{
+    background-color: aquamarine;
+    border: solid aqua;
+    cursor: grab; 
+    display: inline-block
+}

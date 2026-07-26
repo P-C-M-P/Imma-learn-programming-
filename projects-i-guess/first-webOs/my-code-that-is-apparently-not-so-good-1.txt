@@ -1,0 +1,24 @@
+
+            const himmeldeath = 80;
+            let months = Number(localStorage.getItem("months")) || 0;
+            let days = Number(localStorage.getItem("days")) || 0;
+
+            function displayFrierenTime(){
+                document.getElementById("BJEtime").textContent = `Frieren time: ${himmeldeath} yrs, ${months} months, ${days} days`;
+            }
+
+            function updateFrierenTime(){
+                days++;
+                if(days >= 30){
+                    months++;
+                    days = 0;
+                }
+
+                localStorage.setItem("months", months);
+                localStorage.setItem("days", days);
+                
+                displayFrierenTime();
+            }
+
+            displayFrierenTime();
+            setInterval(updateFrierenTime, 86400000);
