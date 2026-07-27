@@ -14,12 +14,12 @@
     border-radius: 12px; 
     background-color: #bbbbbb;
     color: #00000a; 
-    position: absolute
+    position: absolute;
 }
 
 .welcomeheader{
-    background-color: aquamarine;
-    border: solid aqua;
+    background-color: rgb(75, 20, 226);
+    border: solid rgb(38, 24, 88);
     cursor: grab; 
-    display: inline-block
+    display: flex
 }
