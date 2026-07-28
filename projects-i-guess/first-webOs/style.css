@@ -1,25 +1,242 @@
-.closebutton{
+body {
+    margin: 0;
+    height: 100vh;
 
-  width: 48px;
-  height: 24px;
-  cursor: pointer;
-  background-color: #EC6B5E;
-  border-radius: 16px;
-  border: solid 1px rgba(0, 0, 0, 0.25);
-  margin-left: 6px
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    color: #abff9a;
 }
 
-.welcome{
-    border: 4px solid #aaaaaa; 
-    border-radius: 12px; 
-    background-color: #bbbbbb;
-    color: #00000a; 
+
+/* =========================
+   Desktop icons
+========================= */
+
+.openbutton {
+
+    width: 80px;
+    height: 80px;
+
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border-radius: 12px;
+
+    backdrop-filter: blur(4px);
+
+}
+
+
+.openbutton:hover {
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+.openbutton p {
+
+    color: white;
+    text-align: center;
+
+}
+
+
+
+
+/* =========================
+   Windows
+========================= */
+
+
+.window {
+
+    display: none;
+
     position: absolute;
+
+    top: 150px;
+    left: 200px;
+
+    width: 500px;
+
+    border: 3px solid #0e3eddd7;
+
+    border-radius: 12px;
+
+    background-color: rgba(187, 187, 187, 0.85);
+
+    color: #00000a;
+
+    overflow: hidden;
+
+    box-shadow:
+        0px 10px 30px rgba(0,0,0,0.4);
+
 }
 
-.welcomeheader{
+
+
+
+/* =========================
+   Window header
+========================= */
+
+
+.header {
+
+    height: 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 12px;
+    padding-right: 8px;
+
+
     background-color: rgb(75, 20, 226);
-    border: solid rgb(38, 24, 88);
-    cursor: grab; 
-    display: flex
+
+    color: white;
+
+
+    cursor: grab;
+
+}
+
+
+
+.header:active {
+
+    cursor: grabbing;
+
+}
+
+
+
+.header p {
+
+    margin: 0;
+
+    font-weight: bold;
+
+}
+
+
+
+
+/* =========================
+   Close button
+========================= */
+
+
+.closebutton {
+
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+}
+
+
+
+.closebutton:hover {
+
+    opacity: 0.8;
+
+}
+
+
+
+
+
+/* =========================
+   Window content
+========================= */
+
+
+.windowcontent {
+
+    padding: 16px;
+
+}
+
+
+
+.windowcontent img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 24px;
+
+}
+
+
+
+/* =========================
+   Top clock area
+========================= */
+
+
+#BJEtime,
+#timeshown {
+
+    font-weight: bold;
+
+}
+
+.notes-body {
+    display:flex;
+    height:400px;
+}
+
+#taskBar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: rgba(40, 40, 40, 0.8);
+
+    backdrop-filter: blur(8px);
+
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 0 12px;
+
+    border-radius: 16px
+}
+
+#welcome {
+    width: 700px;
+    height: 550px;
+}
+
+#welcome .windowcontent {
+    padding: 24px;
+    overflow-y: auto;
 }

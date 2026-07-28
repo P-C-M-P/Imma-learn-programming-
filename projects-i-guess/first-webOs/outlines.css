@@ -1,0 +1,16 @@
+#taskBar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(40, 40, 40, 0.8);
+
+    backdrop-filter: blur(8px);
+}
+

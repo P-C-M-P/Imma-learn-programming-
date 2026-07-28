@@ -5,7 +5,8 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body style="background-image: url(images-and-other-things-for-web-OS/1343992.jpeg); height: 100vh; max-width: 100%; background-size: cover; color: #abff9a">
-        <div  style="display: flex; justify-content: space-between; color: rgba(15,15,15,0.2718281828)">
+       
+        <div  id = "top" style="display: flex; justify-content: space-between; color: rgba(15,15,15,0.2718281828)">
             <p style="font-weight: bold; font-size: larger">
                 Frieren OS</p>
             <p id="BJEtime" 
@@ -13,17 +14,25 @@
             <p id="timeshown">Real time: </p>
         </div>
         
-        <div class= "*" id="desktop-app"><button><img src="images-and-other-things-for-web-OS/opinion-4.png" style="height: 24px; width: 24px"></button></div>
+        <div id="taskBar">
 
-        <div><p id="welcomeopen" style="cursor: pointer">Frieren OS</p></div>
-        <div class="welcome" id="welcome">
-            
-            
+          <div id= "notesopen">
+            <button><img src="images-and-other-things-for-web-OS/notes-icon-3.svg" style="height: 24px; width: 24px; border-radius: 8px"></button>
+          </div>
 
-           <div class="welcomeheader" id = "welcomeheader" style="justify-content: space-between">
+          <div><p id="welcomeopen" style="cursor: pointer">Frieren OS</p></div>
+
+          <div id="grimoireopen">
+            <button><img src="images-and-other-things-for-web-OS/grimoire.jpg" style="height: 24px; width: 24px; border-radius: 8px"></button>
+          </div>
+
+          </div>
+
+        <div class="window" id="welcome">
+           <div class="header" id = "welcomeheader" style="justify-content: space-between">
             <p>Handle</p>
             <img class="closebutton" id="welcomeclose" src="images-and-other-things-for-web-OS/close-button.jpg">
-            </div>
+           </div>
 
            
         <h1>Welcome to myOS as well!</h1>
@@ -54,6 +63,69 @@
 
 
         </div>
+
+<div class="window" id="notes" style="top: calc(50% - 240px); display: none">
+
+    <div class="header" id="notesheader">
+        <p>Notes</p>
+
+        <img class="closebutton" 
+             id="notesclose" 
+             src="images-and-other-things-for-web-OS/close-button.jpg">
+    </div>
+
+    <div  class="notes-body">
+
+      <div id="sideBar"></div>
+
+        <div id="notesContent" style="overflow-y: scroll;">
+        <p contenteditable="True">
+          <span contenteditable="true">Welcome to <strong>Frieren's memos</strong>
+
+            <p>This is where Frieren-the-mage would keep her memos and notes and grocery lists</p>
+           
+          </span>
+        <blockquote
+          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
+          contenteditable="true">
+        </blockquote>
+        <span contenteditable="true">
+          I was hoping i could solve a math problem actually but it seems i really just suck at that
+        </span>
+        </p>
+        </div>
+
+    <textarea>
+    </textarea>
+
+</div>
+</div>
+
+    <div class="window" id="grimoire">
+
+        <div class="header" id="grimoireheader">
+            <p>Grimoire-collection</p>
+            <p class="closebutton" id="grimoireclose">Exit</p>
+        </div>
+
+      <div class="windowcontent">
+
+        <div class="Grimoire">
+            <h3>Grimoire-1</h3>
+            <p>Description: this grimoire contain basic combat spells</p>
+            <p>Zoltraak: A recent addition to combat spells, made by the H.A.G</p>
+        </div>
+
+        <div>
+            <h3>Grimoire-2</h3>
+            <p>Description: this grimoire contain basic defense spells</p>
+            <p>Sth: An ancient type of defense spell, made by the ancient wood elves(or sth)</p>
+        </div>
+
+      </div>
+
+    </div>
+
 
         <script src="script.js"></script>
 
