@@ -43,6 +43,7 @@ setInterval(function () {
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("notes"));
 dragElement(document.getElementById("grimoire"));
+dragElement(document.getElementById("videos"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -111,6 +112,10 @@ const grimoireScreen = document.getElementById("grimoire");
 const grimoireScreenOpen = document.getElementById("grimoireopen");
 const grimoireScreenClose = document.getElementById("grimoireclose");
 
+const videoScreen = document.getElementById("videos");
+const videoScreenOpen = document.getElementById("videoopen");
+const videoScreenClose = document.getElementById("videoclose");
+
 function closeWindow(element){
     element.style.display = "none";
 }
@@ -145,6 +150,14 @@ grimoireScreenOpen.addEventListener("click", function(){
 
 grimoireScreenClose.addEventListener("click", function(){
     closeWindow(grimoireScreen);
+})
+
+videoScreenOpen.addEventListener("click", function(){
+    openWindow(videoScreen);
+})
+
+videoScreenClose.addEventListener("click", function(){
+    closeWindow(videoScreen);
 })
 
 let selectedIcon = null;
@@ -183,7 +196,8 @@ function handleWindowTap(element){
 
 addWindowTapHandling(welcomeScreen);
 addWindowTapHandling(noteScreen);
-
+addWindowTapHandling(grimoireScreen);
+addWindowTapHandling(videoScreen);
 
 let content = [
   {
@@ -197,15 +211,21 @@ let content = [
            
           </span>
         <blockquote
-          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
+          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px; color: black;"
           contenteditable="true">
         </blockquote>
         <span contenteditable="true">
           I was hoping i could solve a math problem actually but it seems i really just suck at that
         </span>
         </p>
+
+        
       `
-  }
+  },
+
+ /* {
+    title:
+  }*/
 ]
 
 

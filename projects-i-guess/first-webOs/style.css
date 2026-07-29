@@ -18,8 +18,8 @@ body {
 
 .openbutton {
 
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
 
     margin: 20px;
 
@@ -61,32 +61,25 @@ body {
 ========================= */
 
 
-.window {
-
+.window{
     display: none;
-
     position: absolute;
 
-    top: 150px;
-    left: 200px;
+    top: calc(50% - 240px);
+    left: 300px;
 
     width: 500px;
 
-    border: 3px solid #0e3eddd7;
-
+    border: 1px solid rgba(15, 187, 230, 0.35);
     border-radius: 12px;
 
-    background-color: rgba(187, 187, 187, 0.85);
+    background-color: rgba(15, 25, 22, 0.88);
+    color: #e8ffe3;
 
-    color: #00000a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
-    overflow: hidden;
-
-    box-shadow:
-        0px 10px 30px rgba(0,0,0,0.4);
-
+    backdrop-filter: blur(8px);
 }
-
 
 
 
@@ -94,29 +87,20 @@ body {
    Window header
 ========================= */
 
-
-.header {
-
-    height: 40px;
+.header{
+    height: 30px;
 
     display: flex;
-
     justify-content: space-between;
     align-items: center;
 
-    padding-left: 12px;
-    padding-right: 8px;
+    padding: 0 10px;
 
-
-    background-color: rgb(75, 20, 226);
-
-    color: white;
-
+    background-color: rgba(119, 253, 175, 0.9);
+    color: #05b2f7;
 
     cursor: grab;
-
 }
-
 
 
 .header:active {
@@ -128,11 +112,9 @@ body {
 
 
 .header p {
-
     margin: 0;
-
     font-weight: bold;
-
+    line-height: 1;
 }
 
 
@@ -145,12 +127,14 @@ body {
 
 .closebutton {
 
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 20px;
+
+    flex-shrink: 0;
 
     cursor: pointer;
 
-    border-radius: 8px;
+    border-radius: 7px;
 
 }
 
@@ -174,6 +158,7 @@ body {
 .windowcontent {
 
     padding: 16px;
+    overflow: auto;
 
 }
 
@@ -204,31 +189,32 @@ body {
 }
 
 .notes-body {
-    display:flex;
-    height:400px;
+    display: flex;
+    height: 400px;
 }
 
 #taskBar{
     position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: 10px;
 
-    width: 100%;
-    height: 60px;
+    width: calc(100% - 20px);
+    height: 55px;
 
     display: flex;
-
     align-items: center;
-
-    background-color: rgba(40, 40, 40, 0.8);
-
-    backdrop-filter: blur(8px);
-
-    justify-content: flex-start;
+    justify-content: center;
     gap: 12px;
-    padding: 0 12px;
 
-    border-radius: 16px
+    padding: 0 8px 0 12px;
+
+
+    background-color: rgba(20, 25, 23, 0.75);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(171, 255, 154, 0.2);
+    border-radius: 16px;
 }
 
 #welcome {
@@ -237,6 +223,37 @@ body {
 }
 
 #welcome .windowcontent {
+    box-sizing: border-box;
+    height: calc(100% - 40px);
     padding: 24px;
     overflow-y: auto;
+}
+
+#sideBar{
+    width: 140px;
+    flex-shrink: 0;
+
+    padding: 12px;
+
+    border-right: 1px solid rgba(171, 255, 154, 0.2);
+}
+
+#notesContent{
+    flex: 1;
+    padding: 16px;
+}
+
+#videos{
+    width: 800px;
+    height: 400px;
+}
+
+#videos{
+    overflow-y: auto;
+    display: fit-content;
+}
+
+#video .windowcontent{
+    max-width: 100%;
+    height: auto;
 }

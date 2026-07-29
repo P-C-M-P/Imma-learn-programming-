@@ -3,6 +3,9 @@
     <head>
         <script type="module" src="./script.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
     </head>
     <body style="background-image: url(images-and-other-things-for-web-OS/1343992.jpeg); height: 100vh; max-width: 100%; background-size: cover; color: #abff9a">
        
@@ -16,52 +19,56 @@
         
         <div id="taskBar">
 
-          <div id= "notesopen">
+          <div class = "openbutton" id= "notesopen">
             <button><img src="images-and-other-things-for-web-OS/notes-icon-3.svg" style="height: 24px; width: 24px; border-radius: 8px"></button>
           </div>
 
-          <div><p id="welcomeopen" style="cursor: pointer">Frieren OS</p></div>
+          <div class="openbutton" id="welcomeopen"><p style="cursor: pointer">Frieren OS</p></div>
 
-          <div id="grimoireopen">
+          <div class="openbutton" id="grimoireopen">
             <button><img src="images-and-other-things-for-web-OS/grimoire.jpg" style="height: 24px; width: 24px; border-radius: 8px"></button>
           </div>
 
+          <div class="openbutton" id="videoopen">
+            <button><img src="images-and-other-things-for-web-OS/video.jpg" style="height: 24px; width: 24px; border-radius: 8px"></button>
           </div>
+
+        </div>
 
         <div class="window" id="welcome">
            <div class="header" id = "welcomeheader" style="justify-content: space-between">
             <p>Handle</p>
             <img class="closebutton" id="welcomeclose" src="images-and-other-things-for-web-OS/close-button.jpg">
-           </div>
+        </div>
 
-           
-        <h1>Welcome to myOS as well!</h1>
-        <h2>What the guide doesn't ask for</h2>
-        <p>The guide doesn't really ask for title tags!(or head tags for that matter)</p>
-        <p>Also check this out: </p>
-        <img style= "max-width: fit-content; height: auto; padding: 4px; border-radius: 24px" src="images-and-other-things-for-web-OS/Vitelottte.jpg">
-        <p>Ta-da<br/>Ever seen a purple potato before, no right, well feast your eyes on this delicacy</p>
+        <div class="windowcontent">
 
-        <p>Here's a link to brocode's account cause why not</p>
-        <a style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: small; font-weight: bold" href= "https://www.youtube.com/@BroCodez">BRO-CODE</a>
+         <h1>Welcome to myOS as well!</h1>
+          <h2>What the guide doesn't ask for</h2>
+          <p>The guide doesn't really ask for title tags!(or head tags for that matter)</p>
+          <p>Also check this out: </p>
+          <img src="images-and-other-things-for-web-OS/Vitelottte.jpg">
+          <p>Ta-da<br/>Ever seen a purple potato before, no right, well feast your eyes on this delicacy</p>
 
-        <h3 style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: medium"><i>Here's a little about me</i></h3>
+          <p>Here's a link to brocode's account cause why not</p>
+          <a style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: small; font-weight: bold" href= "https://www.youtube.com/@BroCodez">BRO-CODE</a>
 
-        <p>I watch alot of anime(used to)</p>
-        <p>I read alot of manga(used to as well)</p>
-        <p>I like math(i'm not good at it though, the other day i was racking my brains trying to deal with folds)</p>
-        <p>I also like physics(i'm not too good at this either)</p>
-        <p>I listen to japanese music, although i don't really understand any of it</p>
-        <p>That concludes the things about me, sorry i don't lead a very eventful life</p>
+          <h3 style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: medium"><i>Here's a little about me</i></h3>
 
-        <h4>Here's some stuff i feel fairly strongly about</h4>
+          <p>I watch alot of anime(used to)</p>
+          <p>I read alot of manga(used to as well)</p>
+          <p>I like math(i'm not good at it though, the other day i was racking my brains trying to deal with folds)</p>
+          <p>I also like physics(i'm not too good at this either)</p>
+          <p>I listen to japanese music, although i don't really understand any of it</p>
+          <p>That concludes the things about me, sorry i don't lead a very eventful life</p>
 
-        <p>FIrstly, Frieren is peak</p>
-        <p>Secondly, Demon slayer is overrated</p>
-        <p>Thirdly, MaoMao is also a peak character(not as much as frieren though)</p>
-        <p></p>
+          <h4>Here's some stuff i feel fairly strongly about</h4>
 
+          <p>FIrstly, Frieren is peak</p>
+          <p>Secondly, Demon slayer is overrated</p>
+          <p>Thirdly, MaoMao is also a peak character(not as much as frieren though)</p>
 
+        </div>
         </div>
 
 <div class="window" id="notes" style="top: calc(50% - 240px); display: none">
@@ -74,38 +81,34 @@
              src="images-and-other-things-for-web-OS/close-button.jpg">
     </div>
 
-    <div  class="notes-body">
+    <div class="notes-body">
+      
 
-      <div id="sideBar"></div>
-
-        <div id="notesContent" style="overflow-y: scroll;">
-        <p contenteditable="True">
-          <span contenteditable="true">Welcome to <strong>Frieren's memos</strong>
-
-            <p>This is where Frieren-the-mage would keep her memos and notes and grocery lists</p>
-           
-          </span>
-        <blockquote
-          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
-          contenteditable="true">
-        </blockquote>
-        <span contenteditable="true">
-          I was hoping i could solve a math problem actually but it seems i really just suck at that
-        </span>
-        </p>
+        <div id="notesContent" style="overflow-y: scroll">
+          <div id="sideBar">
+          <!---<p contenteditable="True"></p>
+            <p contenteditable="true">Welcome to <strong>Frieren's memos</strong>
+            </p>
+          <p>This is where Frieren-the-mage would keep her memos and notes and grocery lists</p>
+          <div
+            style="background-color: white; margin-top: 16px; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px; color: black;"
+            contenteditable="true">Frieren is legit the G.O.A.T
+          </div>
+          <p contenteditable="true">
+           I was hoping i could solve a math problem actually but it seems i really just suck at that
+          </p>--->
         </div>
-
-    <textarea>
-    </textarea>
-
-</div>
+        </div>
+    </div>
 </div>
 
     <div class="window" id="grimoire">
 
         <div class="header" id="grimoireheader">
             <p>Grimoire-collection</p>
-            <p class="closebutton" id="grimoireclose">Exit</p>
+            <img class="closebutton" 
+             id="grimoireclose" 
+             src="images-and-other-things-for-web-OS/close-button.jpg">
         </div>
 
       <div class="windowcontent">
@@ -122,6 +125,20 @@
             <p>Sth: An ancient type of defense spell, made by the ancient wood elves(or sth)</p>
         </div>
 
+      </div>
+
+    </div>
+
+    <div class="window" id="videos">
+      <div class="header" id="videoheader">
+        <p>Videos</p>
+        <img class="closebutton" 
+             id="videoclose" 
+             src="images-and-other-things-for-web-OS/close-button.jpg">
+      </div>
+
+      <div class="windowcontent">
+        <video src="images-and-other-things-for-web-OS/video-1.mp4" controls>Video</video>
       </div>
 
     </div>

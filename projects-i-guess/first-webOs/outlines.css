@@ -7,10 +7,64 @@
     height: 60px;
 
     display: flex;
+
     align-items: center;
 
     background-color: rgba(40, 40, 40, 0.8);
 
     backdrop-filter: blur(8px);
+
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 0 12px;
+
+    border-radius: 16px
 }
 
+.window {
+
+    display: none;
+
+    position: absolute;
+
+    top: 150px;
+    left: 200px;
+
+    width: 500px;
+
+    border: 3px solid #0e3eddd7;
+
+    border-radius: 12px;
+
+    background-color: rgba(187, 187, 187, 0.85);
+
+    color: #00000a;
+
+    overflow: hidden;
+
+    box-shadow:
+        0px 10px 30px rgba(0,0,0,0.4);
+
+}
+
+.header {
+
+    height: 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 12px;
+    padding-right: 8px;
+
+
+    background-color: rgb(75, 20, 226);
+
+    color: white;
+
+
+    cursor: grab;
+
+}
