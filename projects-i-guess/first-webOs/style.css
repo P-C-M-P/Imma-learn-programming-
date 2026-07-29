@@ -11,11 +11,6 @@ body {
     color: #abff9a;
 }
 
-
-/* =========================
-   Desktop icons
-========================= */
-
 .openbutton {
 
     width: 40px;
@@ -54,13 +49,6 @@ body {
 }
 
 
-
-
-/* =========================
-   Windows
-========================= */
-
-
 .window{
     display: none;
     position: absolute;
@@ -73,19 +61,13 @@ body {
     border: 1px solid rgba(15, 187, 230, 0.35);
     border-radius: 12px;
 
-    background-color: rgba(15, 25, 22, 0.88);
+    background-color: rgba(86, 145, 168, 0.88);
     color: #e8ffe3;
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
     backdrop-filter: blur(8px);
 }
-
-
-
-/* =========================
-   Window header
-========================= */
 
 .header{
     height: 30px;
@@ -96,8 +78,8 @@ body {
 
     padding: 0 10px;
 
-    background-color: rgba(119, 253, 175, 0.9);
-    color: #05b2f7;
+    background-color: rgba(39, 99, 107, 0.9);
+    color: #224a5a;
 
     cursor: grab;
 }
@@ -116,14 +98,6 @@ body {
     font-weight: bold;
     line-height: 1;
 }
-
-
-
-
-/* =========================
-   Close button
-========================= */
-
 
 .closebutton {
 
@@ -147,14 +121,6 @@ body {
 }
 
 
-
-
-
-/* =========================
-   Window content
-========================= */
-
-
 .windowcontent {
 
     padding: 16px;
@@ -174,14 +140,6 @@ body {
 
 }
 
-
-
-/* =========================
-   Top clock area
-========================= */
-
-
-#BJEtime,
 #timeshown {
 
     font-weight: bold;
@@ -190,7 +148,13 @@ body {
 
 .notes-body {
     display: flex;
-    height: 400px;
+    flex-direction: column;
+}
+
+#notesContent{
+    flex: 1;
+    flex-direction: column;
+    padding: 16px;
 }
 
 #taskBar{
@@ -206,7 +170,7 @@ body {
     justify-content: center;
     gap: 12px;
 
-    padding: 0 8px 0 12px;
+    padding: 0 12px;
 
 
     background-color: rgba(20, 25, 23, 0.75);
@@ -229,31 +193,28 @@ body {
     overflow-y: auto;
 }
 
-#sideBar{
-    width: 140px;
+#bottomBar{
+    display: flex;
+    height: 40px;
     flex-shrink: 0;
 
     padding: 12px;
 
-    border-right: 1px solid rgba(171, 255, 154, 0.2);
+    border-top: 1px solid rgba(171, 255, 154, 0.2);
+
+    justify-content: space-between;
+    align-items: center;
 }
 
-#notesContent{
-    flex: 1;
-    padding: 16px;
-}
-
-#videos{
-    width: 800px;
-    height: 400px;
+#bottomBar:hover{
+    cursor: pointer;
 }
 
 #videos{
-    overflow-y: auto;
-    display: fit-content;
+    width: 700px;
+    overflow: auto;
 }
 
-#video .windowcontent{
-    max-width: 100%;
-    height: auto;
+#videos .windowcontent{
+    padding: 10px;
 }

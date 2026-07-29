@@ -1,8 +1,4 @@
-
-// =========================
-// Frieren Clock
-// =========================
-
+/*
 const himmeldeath = 80;
 
 let startTime = Number(localStorage.getItem("frierenStart"));
@@ -31,7 +27,9 @@ function displayFrierenTime() {
 
 displayFrierenTime();
 setInterval(displayFrierenTime, 86400000);
+*/
 
+// i'll work on the above clock in webOS-2
 
 setInterval(function () {
     document.querySelector("#timeshown").innerHTML =
@@ -99,6 +97,7 @@ function dragElement(element) {
 
 let biggestIndex = 1;
 let topBar = document.getElementById("top");
+let taskBar = document.getElementById("taskbar");
 
 const welcomeScreen = document.getElementById("welcome");
 const welcomeScreenClose = document.getElementById("welcomeclose");
@@ -121,7 +120,7 @@ function closeWindow(element){
 }
 
 function openWindow(element){
-    element.style.display = "flex";
+    element.style.display = "inline-block";
     biggestIndex++;
     element.style.zIndex = biggestIndex;
     topBar.style.zIndex = biggestIndex + 1;
@@ -201,31 +200,37 @@ addWindowTapHandling(videoScreen);
 
 let content = [
   {
-    title: "Welcome",
-    date: "06/28/2023",
+    title: `Welcome`,
+    date: `06/28/1078`,
     content: `
            <p contenteditable="True">
-          <span contenteditable="true">Welcome to <strong>Frieren's memos</strong>
+          <span contenteditable="true">Welcome to <strong>Frieren's memos</strong></p>
 
             <p>This is where Frieren-the-mage would keep her memos and notes and grocery lists</p>
-           
           </span>
-        <blockquote
-          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px; color: black;"
-          contenteditable="true">
-        </blockquote>
-        <span contenteditable="true">
-          I was hoping i could solve a math problem actually but it seems i really just suck at that
-        </span>
-        </p>
-
-        
       `
   },
 
- /* {
-    title:
-  }*/
+    {
+    title: `Future message`,
+    date: `08/19/2029`,
+    content: `
+              <p contenteditable="True">
+          This is a message from the future, turns out the world is pretty chill in the future, everything is all good and all stuff
+        </p>
+      `
+  },
+
+  {
+    title: `Math is kinda hard`,
+    date: `07/25/2026`,
+    content: `        
+        
+        <span contenteditable="true">
+          I was hoping i could solve a math problem actually but it seems i really just suck at that
+        </span>
+        `
+  }
 ]
 
 
@@ -236,8 +241,8 @@ function setNotesContent(index){
 
 setNotesContent(0);
 
-function addToSideBar(index){
-    let sideBar = document.getElementById("sideBar");
+function addToBottomBar(index){
+    let bottomBar = document.getElementById("bottomBar");
     let note = content[index];
     let newDiv = document.createElement("div");
 
@@ -254,11 +259,11 @@ function addToSideBar(index){
     setNotesContent(index);
   });
 
-    sideBar.appendChild(newDiv);
+    bottomBar.appendChild(newDiv);
 }
 
 
-    for (let i = 0; i < content.length; i++) {
-  addToSideBar(i)
+  for (let i = 0; i < content.length; i++) {
+  addToBottomBar(i)
 }
 
