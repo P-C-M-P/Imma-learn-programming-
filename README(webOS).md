@@ -1,1 +1,2 @@
-So this is a read me file for my web-OS project i started with the guide provided by stardance
+# Frieren OS
+This is a web OS mainly themed around frieren the anime: Frieren beyond journey's end
