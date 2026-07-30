@@ -204,9 +204,10 @@ let content = [
     date: `06/28/1078`,
     content: `
            <p contenteditable="True">
-          <span contenteditable="true">Welcome to <strong>Frieren's memos</strong></p>
+          <span contenteditable="true">Welcome to <strong>Frieren's Notes</strong></p>
 
             <p>This is where Frieren-the-mage would keep her memos and notes and grocery lists</p>
+            <p><small>I also use it sometimes</small></p>
           </span>
       `
   },
